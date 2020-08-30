@@ -7,7 +7,8 @@ Neural Style Transfer is a technique to blend two images - a *content* image and
 the content image looks like it was painted in the style of the style image.
 The blended image is called *generated* image.
 
-The style image I have used is a painting called *Starry Night* by Vincent van Gogh
+The style image I have used is a painting called *Starry Night* by Vincent van Gogh.
+
 The content and style images are uploaded onto this repository
 
 ![Test Image 4](https://i.imgur.com/wy37mwH.jpg)
