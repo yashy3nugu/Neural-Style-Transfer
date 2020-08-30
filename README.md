@@ -42,3 +42,12 @@ and carries out backward propagation.
 The procedure is summarised in the picture below:
 
 ![test Image](layout.png)
+
+# Instructions
+
+1. Download the images *content.jpeg* and *style.jpg*
+2. Open the file *Neural_Style_Transfer.ipynb* and open it using google colab.
+3. Switch the runtime type to 'GPU' for faster execution.
+3. Run the cells and upload the images *content.jpeg* and *style.jpg* when asked by the notebook.
+4. In case you want to upload your own images, you can do so. Change the hyperparameters accordingly.
+5. Save the generated image.
