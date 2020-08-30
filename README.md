@@ -41,7 +41,7 @@ The entire cost function then would be defined like this:
 
 Where alpha and beta are hyperparameters you need to tune.
 
-Once the cost is evaluated (forward propagation) the network evaluates the derivative of the cost with respect to the generated image
+Once the cost is evaluated (forward propagation) the network evaluates the gradient of the cost with respect to the generated image
 and carries out backward propagation.
 The procedure is summarised in the picture below:
 
