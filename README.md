@@ -20,11 +20,12 @@ The content and style images are uploaded onto this repository
 # How is it Done?
 The generated image is initially defined as the content image.
 The *content* and *style* images are put into a neural network (VGG19 in this case) and the outputs from a particular layer are extracted by forward propagation.
+
 Let the activations from the network for the *content(C)* and *generated(G)* images be ***a(c)*** and ***a(g)*** respectively.
 
 Then we evaluate the *content cost* defined as follows:
 
-![content cost equation](https://i.imgur.com/lBx5NLa.png)
+![content cost equation](https://i.imgur.com/oVBHAqP.png)
 
 Similarly we evaluate the *style cost*.
 We need to introduce *Gram matrices* for this.
@@ -32,7 +33,12 @@ A Gram matrix of a set of vectors (v<sub>1</sub>,v<sub>2</sub> .... v<sub>n</sub
 
 ![Gram matrix](https://i.imgur.com/R8QhI1W.png)
 
-The *style cost* is defined as:
+An important feature of the Gram matrix is that the value G<sub>ij</sub> measures how the activations of filter i is similar to the activation of the filter j.
+This is an important factor in style transfer.
+
+![correlation](https://i.imgur.com/RHdHYuo.png)
+
+Then the *style cost* for the *generated(G)* and *style(S)* images is defined as:
 
 ![style cost equation](https://i.imgur.com/oyWCW0S.png)
 
