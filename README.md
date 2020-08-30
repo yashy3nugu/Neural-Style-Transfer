@@ -7,11 +7,12 @@ Neural Style Transfer is a technique to blend two images - a *content* image and
 the content image looks like it was painted in the style of the style image.
 The blended image is called *generated* image.
 
-The style image I have used is a painting called *Starry Night* by Vincent van Gogh.
+NST was first published in the paper "A Neural Algorithm of Artistic Style" by Gatys et al., originally released to ArXiv 2015
 
+The style image I have used is a painting called *Starry Night* by Vincent van Gogh.
 The content and style images are uploaded onto this repository
 
-![Test Image 4](https://i.imgur.com/wy37mwH.jpg)
+![content and style](https://i.imgur.com/wy37mwH.jpg)
 
 
 
@@ -23,21 +24,21 @@ Let the activations from the network for the *content(C)* and *generated(G)* ima
 
 Then we evaluate the *content cost* defined as follows:
 
-![Test Image 4](https://i.imgur.com/lBx5NLa.png)
+![content cost equation](https://i.imgur.com/lBx5NLa.png)
 
 Similarly we evaluate the *style cost*.
 We need to introduce *Gram matrices* for this.
 A Gram matrix of a set of vectors (v<sub>1</sub>,v<sub>2</sub> .... v<sub>n</sub>) is defined as:
 
-![Test Image 4](https://i.imgur.com/R8QhI1W.png)
+![Gram matrix](https://i.imgur.com/R8QhI1W.png)
 
 The *style cost* is defined as:
 
-![test Image](https://i.imgur.com/oyWCW0S.png)
+![style cost equation](https://i.imgur.com/oyWCW0S.png)
 
 The entire cost function then would be defined like this:
 
-![test Image](https://i.imgur.com/C7D6s0A.png)
+![cost function equation](https://i.imgur.com/C7D6s0A.png)
 
 Where alpha and beta are hyperparameters you need to tune.
 
@@ -45,7 +46,7 @@ Once the cost is evaluated (forward propagation) the network evaluates the gradi
 and carries out backward propagation.
 The procedure is summarised in the picture below:
 
-![test Image](layout.png)
+![network layout](layout.png)
 
 # Instructions
 
@@ -55,3 +56,8 @@ The procedure is summarised in the picture below:
 3. Run the cells and upload the images *content.jpeg* and *style.jpg* when asked by the notebook.
 4. In case you want to upload your own images, you can do so. Change the hyperparameters accordingly.
 5. Save the generated image.
+
+# Update
+This is another set of content and style images to which neural style transfer has been applied.
+
+![test Image](https://i.imgur.com/fHonY74.jpg)
