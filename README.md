@@ -19,7 +19,7 @@ The content and style images are uploaded onto this repository
 # How is it Done?
 The generated image is initially defined as the content image.
 The *content* and *style* images are put into a neural network (VGG19 in this case) and the outputs from a particular layer are extracted by forward propagation.
-Let the activations from the network for the *content(C)* and *generated(G)* images be ***a<sub>c</sub>*** and ***a<sub>c</sub>*** respectively.
+Let the activations from the network for the *content(C)* and *generated(G)* images be ***a(c)*** and ***a(g)*** respectively.
 
 Then we evaluate the *content cost* defined as follows:
 
