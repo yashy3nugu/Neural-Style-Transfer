@@ -7,6 +7,8 @@ Neural Style Transfer is a technique to blend two images - a *content* image and
 the content image looks like it was painted in the style of the style image.
 The blended image is called *generated* image.
 
+![Test Image 4](https://i.imgur.com/wy37mwH.jpg)
+
 
 
 
