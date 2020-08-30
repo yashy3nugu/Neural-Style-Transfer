@@ -29,11 +29,14 @@ The *style cost* is defined as:
 
 ![test Image](https://i.imgur.com/oyWCW0S.png)
 
-The entire cost function would be defined like this:
+The entire cost function then would be defined like this:
 
 ![test Image](https://i.imgur.com/C7D6s0A.png)
 
 Where alpha and beta are hyperparameters you need to tune.
 
 Once the cost is evaluated (forward propagation) the network evaluates the derivative of the cost with respect to the generated image
-and carries out backward propagation
+and carries out backward propagation.
+The procedure is summarised in the picture below:
+
+![test Image](layout.png)
