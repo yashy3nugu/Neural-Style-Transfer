@@ -64,6 +64,6 @@ The procedure is summarised in the picture below:
 5. Save the generated image.
 
 # Update
-This is another set of content and style images to which neural style transfer has been applied.
+This is another set of content and style images to which neural style transfer has been applied using the model in the notebook
 
 ![test Image](https://i.imgur.com/fHonY74.jpg)
